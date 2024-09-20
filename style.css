@@ -1,3 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  box-sizing: border-box;
+  line-height: 1.3;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
 h1 {
-  color: red;
+  font-size: 5rem;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 4rem;
+  font-style: italic;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+.font-italic {
+  font-style: italic;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.container {
+  max-width: 1200px;
+  padding-top: 56px;
+}
+
+.nav {
+  color: white;
+  background: no-repeat center url(./img/banner.png);
+  background-size: cover;
+  height: 958px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav .container {
+  padding-top: 0px;
+}
+.nav .nav-text {
+  padding-bottom: 40px;
+}
+.nav .nav-text h1 {
+  padding-bottom: 32px;
+}
+.nav .web-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav .web-link li + li {
+  margin-left: 16px;
+}
+
+
+.sec-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec-about h2 {
+  padding-bottom: 40px;
+}
+.sec-about .about-text {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid black;
+}
+.sec-about .about-text p + p {
+  padding-top: 8px;
+}
+.sec-about .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 56px;
+}
+.sec-about ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sec-about ul li {
+  font-size: 1.5rem;
+  font-style: italic;
+  list-style: disc;
+}
+.sec-about ul li::marker {
+  color: #891818;
+  font-size: 40px;
+}
+
+.sec-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  color: white;
+}
+.sec-main .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 56px;
+}
+.sec-main h2 {
+  text-align: center;
+}
+.sec-main h3,
+.sec-main p {
+  font-weight: 500;
+  text-align: center;
+}
+.sec-main h3 {
+  padding-top: 12px;
+  padding-bottom: 32px;
+}
+.sec-main p {
+  line-height: 1.5;
+}
+.sec-main .main-imgs {
+  padding-top: 68px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sec-main .main-imgs > div {
+  padding-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.sec-main .main-imgs > div img + img {
+  margin-left: 20px;
+}
+
+.sec-main2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec-main2 h3 {
+  padding-bottom: 56px;
+}
+.sec-main2 p {
+  padding-top: 16px;
+  padding-bottom: 48px;
+}
+.sec-main2 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.sec-main2 .min2-img1 {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+.sec-main2 .min2-img1 div + div {
+  padding-left: 24px;
+}
+.sec-main2 .min2-img2 {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+.sec-main2 .min2-img2 div + div {
+  padding-left: 24px;
+}
+.sec-main2 .min2-img3 {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+.sec-main2 .min2-img3 div + div {
+  padding-left: 24px;
+}
+
+.footer {
+  background-color: #000000;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.footer h3 {
+  font-weight: 500;
+  padding-top: 16px;
+}
+.footer .container {
+  padding-bottom: 64px;
+}
+
+@media screen and (max-width: 798px) {
+  .sec-main .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .sec-main .main-imgs > img {
+    width: 100%;
+  }
+  .sec-main .main-imgs > div img {
+    width: 100%;
+    max-height: 416px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .sec-main .main-imgs > div img + img {
+    margin-left: 0px;
+    padding-top: 40px;
+  }
+  .sec-main2 .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .sec-main2 .min2-img1 div + div {
+    padding-left: 0px;
+  }
+  .sec-main2 .min2-img2 div + div {
+    padding-left: 0px;
+  }
+  .sec-main2 .min2-img2 img {
+    width: 100%;
+  }
+  .sec-main2 .min2-img3 div + div {
+    padding-left: 0px;
+  }
 }/*# sourceMappingURL=style.css.map */
