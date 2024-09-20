@@ -220,9 +220,13 @@ img {
 }
 
 @media screen and (max-width: 798px) {
-  .sec-main .container {
+  .container {
     padding-left: 40px;
     padding-right: 40px;
+  }
+  .nav .container {
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .sec-main .main-imgs > img {
     width: 100%;
@@ -237,10 +241,6 @@ img {
     margin-left: 0px;
     padding-top: 40px;
   }
-  .sec-main2 .container {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
   .sec-main2 .min2-img1 div + div {
     padding-left: 0px;
   }
@@ -252,5 +252,9 @@ img {
   }
   .sec-main2 .min2-img3 div + div {
     padding-left: 0px;
+  }
+  .footer .container {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }/*# sourceMappingURL=style.css.map */
