@@ -161,6 +161,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .sec-main2 h3 {
   padding-bottom: 56px;
@@ -224,10 +225,6 @@ img {
     padding-left: 40px;
     padding-right: 40px;
   }
-  .nav .container {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
   .sec-main .main-imgs > img {
     width: 100%;
   }
@@ -253,8 +250,45 @@ img {
   .sec-main2 .min2-img3 div + div {
     padding-left: 0px;
   }
-  .footer .container {
-    padding-left: 0px;
-    padding-right: 0px;
+}
+@media screen and (max-width: 490px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .nav h1 {
+    font-size: 60px;
+  }
+  .sec-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sec-about h2 {
+    padding-bottom: 40px;
+  }
+  .sec-about h3 {
+    font-size: 20px;
+  }
+  .sec-about img {
+    width: 100%;
+  }
+  .sec-about ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .sec-about ul li {
+    font-size: 1.25rem;
+  }
+  .sec-about ul li::marker {
+    font-size: 20px;
+  }
+  .sec-main2 .min2-img1 img {
+    width: 100%;
+  }
+  .sec-main2 .min2-img3 img {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
